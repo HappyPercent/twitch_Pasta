@@ -1,0 +1,20 @@
+{
+  "name": "Pasta",
+  "version": "0.1",
+  "description": "Save and paste your twitch quotes",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Click to view a popup",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["storage", "tabs", "activeTab"]
+}

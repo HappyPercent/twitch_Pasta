@@ -1,0 +1,53 @@
+body {
+    min-width: 400px;
+    background-color: #656565;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    padding: 15px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0 0 8px 0;
+}
+
+#pastas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#new-pasta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+#new-pasta textarea {
+    flex-grow: 1;
+    height: 100px;
+    resize: none;
+}
+
+.pastas__pasta-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 8px 0;
+}
+
+.pastas__pasta-item:not(:last-child) {
+    border-bottom: 1px solid #ffffff;
+}
